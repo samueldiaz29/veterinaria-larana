@@ -1,0 +1,33 @@
+.pregunta-card-container {
+    width: 900px;
+    box-shadow: 0 0 5px #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pregunta-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6200A3;
+    font-weight: 600;
+    color: #fff;
+    padding: var(--paddin-interno);
+}
+
+.btn-pregunta-card {
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f29200;
+    color: #fff;
+    cursor: pointer;
+}
+
+.respuesta {
+    padding: var(--paddin-interno);
+}
+
+:root {
+    --paddin-interno: 10px 30px;
+}

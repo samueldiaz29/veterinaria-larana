@@ -1,0 +1,113 @@
+.historia{
+    text-align: justify;
+}
+
+.historia h1{
+    background-color: purple;
+    color: wheat;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.contenhistoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenhistoria p{
+    background-color: rgb(128, 0, 128);
+    color: wheat;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 10px;   
+}
+
+.contenhistoria img{
+    width: 500px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.contenhistoria img:hover{
+    transform: translateY(-6px);
+}
+
+.servicios h1{
+    background-color: purple;
+    color: wheat;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.servicios p{
+    padding-left: 20px;
+}
+
+
+
+.reseniaclientes h1{
+    background-color: purple;
+    color: wheat;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.per1{
+    display: flex;
+    gap: 30px;
+    text-align: justify;
+    padding-right: 20px;
+    background-color: wheat;
+    padding-top: 20px;
+}
+
+.per1 img{
+    width: 150px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.per1 p2{
+    margin-top: 50px;
+}
+.nomper1{
+    padding-left: 75px;
+    margin-top: 0;
+    background-color: wheat;
+    padding-bottom: 10px;
+}
+
+.per2{
+    display: flex;
+    gap: 30px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.per2 img{
+    width: 150px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.per2 p2{
+    margin-top: 50px;
+}
+.nomper2{
+    margin-left: 75px;
+    margin-top: 0;
+}
+
+
