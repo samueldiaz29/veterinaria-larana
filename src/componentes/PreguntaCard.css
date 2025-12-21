@@ -2,7 +2,6 @@
     width: 900px;
     box-shadow: 0 0 5px #000;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .pregunta-card {
@@ -25,8 +24,18 @@
 }
 
 .respuesta {
-    padding: var(--paddin-interno);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
 }
+
+.descripcion-card-activa {
+    padding: var(--paddin-interno);
+    max-height: 300px;
+    opacity: 1;
+}
+
 
 :root {
     --paddin-interno: 10px 30px;

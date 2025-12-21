@@ -1,0 +1,162 @@
+.contacto-banner-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.contacto-banner-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.contacto-banner-presentacion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    width: 600px; 
+    height: 140px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #6200a360;
+    color: #fff;
+    font-size: 90px;
+    text-align: center;
+}
+
+.contacto-cuerpo {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 40px;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.contacto-formulario-section {
+    flex: 1;
+}
+
+.contacto-formulario-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.formulario {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila-input {
+    display: flex;
+    gap: 15px;
+}
+
+.fila-input input, .formulario input[type="email"], .formulario textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.link-text {
+    color: #f7b148; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enviar-btn {
+    background-color: #f7b148;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.3s ease;
+}
+
+.enviar-btn:hover {
+    background-color: #c7712b;
+}
+
+.contacto-imagen-section {
+    flex: 1;
+    position: relative;
+}
+
+.contenedor-perro-gato{
+    position: relative;
+}
+
+.foto-perro-gato {
+    width: 100%;
+    border-radius: 80px; 
+    display: block;
+}
+
+.cuadro-informativo {
+    background-color: #f1a93c; 
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: -35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.cuadro-informativo p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.cuadro-informativo span{
+    font-size: 14px;
+    display: block; 
+}
+
+.mapa-estatico-contenedor {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa-img {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain; 
+}
+
+@media (max-width: 768px) {
+    .contacto-cuerpo {
+        flex-direction: column;
+    }
+    .contacto-banner-presentacion {
+        font-size: 2rem;
+    }
+}
