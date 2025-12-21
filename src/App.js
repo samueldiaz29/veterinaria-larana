@@ -7,6 +7,7 @@ import Nosotros from './componentes/Nosotros';
 import Header from './componentes/Header';
 import Banner from './componentes/Banner';
 import Footer from './componentes/Footer';
+import Contactanos from './componentes/Contactanos';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <Route path="/nosotros" element={<><Nosotros /></>} />
         <Route path="/blog" element={<><Blog /></>} />
         <Route path="/preguntas" element={<><PreguntasFrecuentes /></>} />
-        <Route path="/contactanos" element={<><Inicio /></>} />
+        <Route path="/contactanos" element={<><Contactanos /></>} />
       </Routes>
       <Footer />
     </BrowserRouter>

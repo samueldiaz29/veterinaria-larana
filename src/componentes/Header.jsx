@@ -16,12 +16,11 @@ const Header = () => {
                     <li><Link to="/servicios" className="menu-item">Servicios</Link></li>
                     <li><Link to="/blog" className="menu-item">Blog</Link></li>
                     <li><Link to="/preguntas" className="menu-item">Preguntas frecuentes</Link></li>
-                    <li><Link to="/blog" className="menu-item">Contactanos</Link></li>
                 </ul>
             </nav>
 
-            <Link to="/blog" className="contact-btn">
-                Contáctanos
+            <Link to="/contactanos" className="contact-btn">
+              Contáctanos
             </Link>
         </header>
     );

@@ -10,9 +10,7 @@ function PreguntaCard({titulo, descripcion}) {
                 {titulo}
                 <button className="btn-pregunta-card" onClick={()=> setMostrarPregunta(prev => !prev)}>{icono}</button>
             </div>
-            { mostrarPregunta && (
-                <div className="respuesta">{descripcion}</div>
-            )}
+            <div className={`respuesta ${mostrarPregunta ? 'descripcion-card-activa' : ''}`}>{descripcion}</div>
         </div>
     );
 }
