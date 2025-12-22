@@ -2,13 +2,10 @@
     margin: 0;
     padding: 0;
 }
-p{
-    text-align: justify;
-}
 .marco{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 350px;
 }
 .marco >img{
     position: absolute;
@@ -16,87 +13,87 @@ p{
     height: 100%;
     object-fit: cover;
 }
-.presentacion {
-    position: absolute;
+.somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(28, 6, 49, 0.582);
-    color: white;
-    text-align: center;
+    height: 450px;
+    gap: 15px;
 }
-.presentacion >h2{
-    padding-top:30px;
-    font-size: 50px;
-}
-.presentacion > p{
-    margin-top: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
+.psomos{
+    color: rgb(103, 93, 102);
+    padding-right:80px; ;
     font-size: 20px;
+    font-weight: 400;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
     text-align: justify;
+}
+.somos img{
+    object-fit: cover;
+    margin-top: 70px;
+    height: 345px;
+}
+.p1somos{
+width: 100%;
+ font-size: 70px;
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ font-weight: 600;
+}
+.back{
+    color: rgb(45, 7, 45);
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+    padding-top: 8px;
+}
+.back:hover{
+    transform: scale(1.02);
 }
 .equipo >h1{
     text-align: center;
-    color: rgb(66, 10, 57);
     font-weight: 800;
-    font-size: 40px;
-}
-.equipo{
-    background-color: #a54edfb6;
-}
-.equipo >p{
-    padding: 50px;
-    display: flex;
-    text-align: justify;
-    justify-content: center;
-    color: rgb(22, 21, 21);
-    font-size: 18px;
-    
-
-}
-.medicos{
-    position: relative;
-    width: 1000px;
-    margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
-.medico{
-    width: 250px;
-}
-.medico > img{
-    width: 100%;
-}
-.medico > p{
-    text-align: justify;
-    width: 100%;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+    color:  #6200A3;
+    font-size: 60px;
+    margin: 0px auto 10px auto;
+    background-color: rgba(245, 89, 245, 0.199);
+    padding: 40px;
 }
 .misionvision{
     width: 100%;
     margin: 80px auto 0;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: rgba(28, 6, 49, 0.582);
+    background-color: rgba(101, 85, 116, 0.418);
 }
 .mvision{
-    text-align: center;
+    width: 100%;
+    height: 450px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .imgmvision{
     position: relative;
-    width: 2200px;
-    height: 250px;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
 }
-.imgmvision  img{
+.imgmvision img{
     width: 100%;
     height: 100%;
-    position: relative;
     object-fit: cover;
+}
+.imgmvision:hover img{
+    transition: all 1s ease;
+    transform: scale(1.1);
 }
 .imgmvision  h1{
     position: absolute;
@@ -111,13 +108,31 @@ p{
     color: rgb(8, 8, 8);
     background-color: rgba(97, 87, 93, 0.418);
 }
-.mvision >p{
-    text-align: justify;
-    font-size: 18px;
+.p{
+    width: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+}
+
+.p img {
+    width: 70px;
+}
+
+.p > p{
+    text-align: justify;
     color: aliceblue;
-    
+    font-size: var(--letra-descripcion-nosotros);
+    width: 60%;
+}
+
+.descripcion-nosotros {
+    font-size: var(--letra-descripcion-nosotros);
+}
+
+:root {
+    --letra-descripcion-nosotros: 29px;
 }
