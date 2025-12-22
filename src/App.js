@@ -9,6 +9,7 @@ import Banner from './componentes/Banner';
 import Footer from './componentes/Footer';
 import Contactanos from './componentes/Contactanos';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import WhatsappFlotante from './componentes/WhatsappFlotante';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/preguntas" element={<><PreguntasFrecuentes /></>} />
         <Route path="/contactanos" element={<><Contactanos /></>} />
       </Routes>
+      <WhatsappFlotante/>
       <Footer />
     </BrowserRouter>
   );
