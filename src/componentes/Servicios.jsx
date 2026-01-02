@@ -57,23 +57,29 @@ function Servicios() {
   };
 
   return (
-    <section className="services">
-      {servicios.map((s, i) => (
-       <div className={`servicio ${activo === i ? "activo" : ""}`} key={i}>
-          <img className="servicio-img" src={s.img} alt={s.title} />
+    <div>
+      <div className="titulo-service">
+        <img src="/img/cerca-de-veterinario-cuidando-perro (1).jpg" />
+        <h1>SERVICIOS</h1>
+      </div>
+      <section className="services">
+        {servicios.map((s, i) => (
+        <div className={`servicio ${activo === i ? "activo" : ""}`} key={i}>
+            <img className="servicio-img" src={s.img} alt={s.title} />
 
-          <h2 className="titulo">{s.title}</h2>
+            <h2 className="titulo">{s.title}</h2>
 
-          <button className="btn-ver" type="button" onClick={() => toggle(i)}>
-            {activo === i ? "CERRAR" : "VER MÁS"}
-          </button>
+            <button className="btn-ver" type="button" onClick={() => toggle(i)}>
+              {activo === i ? "CERRAR" : "VER MÁS"}
+            </button>
 
-          <div className={`overlay ${activo === i ? "open" : ""}`}>
-            <p className="overlay-text">{s.text}</p>
+            <div className={`overlay ${activo === i ? "open" : ""}`}>
+              <p className="overlay-text">{s.text}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </section>
+        ))}
+      </section>
+    </div>
   );
 }
 
