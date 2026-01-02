@@ -20,7 +20,7 @@ function Nosotros(){
                 </div>
             </div>
             <div className="equipo">
-                <h1>NUESTRO EQUIPO DE TRABAJO</h1>
+                <h1>EQUIPO DE TRABAJO</h1>
             </div> 
             <MedicosCarrusel />
             <div className="misionvision">
