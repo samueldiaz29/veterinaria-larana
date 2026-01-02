@@ -2,110 +2,113 @@
     text-align: justify;
 }
 
-.historia h1{
-    background-color: purple;
-    color: wheat;
+.mejoresprofes{
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    color: purple;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 350;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .contenhistoria{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+    width: 100%;
 }
 
-.contenhistoria p{
-    background-color: rgb(128, 0, 128);
-    color: wheat;
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-    border-radius: 10px;   
-}
-
-.contenhistoria img{
-    width: 500px;
-    height: 200px;
-    margin-right: 20px;
+.parrafo{
+    color: black;
     border-radius: 10px;
+    font-size: x-large;
+    width: 40%;
+    padding: 2rem;
+    font-weight: 350;
+}
+
+.imghistoria{
+    background-color: red;
     transition: transform .2s;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
 }
 
 .contenhistoria img:hover{
     transform: translateY(-6px);
 }
 
-.servicios h1{
-    background-color: purple;
-    color: wheat;
+.nuestrosserv{
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    color: purple;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 350;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
-.servicios p{
+.servicios {
     padding-left: 20px;
+    margin: 40px 0 90px 0;
 }
 
-
-
-.reseniaclientes h1{
-    background-color: purple;
-    color: wheat;
+.resenia{
+    background-color: rgba(245, 222, 179, 0.473);
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    color: #6200A3;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 350;
+    margin: 0;
+    padding-bottom: 4rem;
+    margin-top: 40px;
 }
 
-.per1{
+.reseniaclientes{
+    display: flex;
+    background-color: rgba(245, 222, 179, 0.473);
+    padding-bottom: 40px;
+}
+
+.per1, .per2{
+    color: #6200a3;
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
     text-align: justify;
-    padding-right: 20px;
-    background-color: wheat;
-    padding-top: 20px;
 }
 
-.per1 img{
-    width: 150px;
-    margin-left: 50px;
+.per1 img, .per2 img{
     border-radius: 10px;
     box-shadow: 0 0 5px black;
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    
 }
 
-.per1 p2{
-    margin-top: 50px;
+.per1 p2, .per2 p2{
+    display: flex;
+    font-size: x-large;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
 }
 .nomper1{
-    padding-left: 75px;
+    font-size: larger;
+    padding-left: 90px;
     margin-top: 0;
     background-color: wheat;
     padding-bottom: 10px;
 }
 
-.per2{
-    display: flex;
-    gap: 30px;
-    text-align: justify;
-    margin-right: 20px;
-}
-
-.per2 img{
-    width: 150px;
-    margin-left: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px black;
-}
-
-.per2 p2{
-    margin-top: 50px;
-}
 .nomper2{
+    font-size: larger;
     margin-left: 75px;
     margin-top: 0;
 }

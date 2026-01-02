@@ -121,3 +121,29 @@
   transition:opacity 0.3s ease;
 }
 
+.titulo-service {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 99999;
+}
+
+.titulo-service img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 27%;
+}
+
+.titulo-service h1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 70px;
+  background-color: #00000060;
+}

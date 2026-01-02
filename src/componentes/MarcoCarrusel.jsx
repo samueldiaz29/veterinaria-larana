@@ -27,7 +27,7 @@ function MarcoCarrusel() {
       <img src={imagenes[inicio]} />
       <div className="presentacion">
         <h2>NOSOTROS</h2>
-        <Link to="/blog" className="button">Reserva tu cita aquí</Link>
+        <Link to="/contactanos" className="button">Reserva tu cita aquí</Link>
       </div>
     </div>
   );

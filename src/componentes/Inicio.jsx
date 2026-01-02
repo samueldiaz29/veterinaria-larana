@@ -1,4 +1,5 @@
 import "./Inicio.css";
+import Iniciocarrusel from "./Iniciocarrusel";
 import { useState, useEffect } from "react";
 function Inicio(){
     const [index, setIndex] = useState(0);
@@ -17,44 +18,46 @@ function Inicio(){
         return () => clearInterval(timer);
     }, []);
 
-    return(
+     return(
         <div className="body">
             <div className="historia">
-                    <h1>
-                        NUESTRA HISTORIA
+                    <h1 className="mejoresprofes" >
+                        LOS MEJORES PROFESIONALES AL SERVICIO DE TUS MASCOTAS
                     </h1>
                 <div className="contenhistoria">
-                    <p>
-                        Veterinaria Larana nace de la idea de profesionales veterinarios apasionados y comprometidos con la salud y la calidad de vida de nuestras mascotas, fue fundada hace más de 20 años, en la ciudad de Lima, es por ello que, contamos con la experiencia y el recorrido profesional para encargarnos de todos las consultas, revisiones y tratamientos, priorizando la rapidez y la seguridad de nuestros profesionales en las intervenciones para tu mascota, trabajando con las mejores marcas en el mundo de las mascotas.
+                    <p className="parrafo">
+                        Veterinaria Larana nace de la idea de profesionales veterinarios apasionados y comprometidos con la salud y la calidad de vida de nuestras mascotas, contamos con la experiencia y el recorrido profesional para encargarnos de todos las consultas, revisiones y tratamientos, priorizando la rapidez y la seguridad de nuestros profesionales en las intervenciones para tu mascota.
                     </p>
-                    <img src="/img/vet1.jpg" alt="" />
+                    <img className="imghistoria" src="/img/vet1.jpg" alt="" />
                 </div>                
             </div>
 
             <div className="servicios">
-                <h1>
-                    SERVICIOS
+                <h1 className="nuestrosserv" >
+                    NUESTROS SERVICIOS
                 </h1>
+                <Iniciocarrusel/>
             </div>
-            
-            <div className="reseniaclientes">
-                <h1>
+                <h1 className="resenia">
                     RESEÑAS DE NUESTROS CLIENTES
                 </h1>
+            <div className="reseniaclientes">
                 <div className="per1">
                     <img src="/img/per1.jpg" alt=""/>
                         <p2>
+                            Pablo Sanchez: <br />
                             "¡La mejor veterinaria de la zona! Desde que entras se nota el amor y la dedicación que tienen por los animales. Trataron a mi perrito con una paciencia increíble y me explicaron todo el proceso de su tratamiento con mucha claridad. Me fui con la tranquilidad de saber que mi mejor amigo está en las mejores manos. ¡100% recomendados!"
                         </p2>
                 </div>
-                        <p className="nomper1">Pablo Sanchez</p>
                 <div className="per2">
                     <img src="/img/per2.jpg" alt=""/>
+                    <p className="nomper2"></p>
                         <p2>
+                            Emilio Gonzales: <br />
                             "Excelente nivel de profesionalismo. Llevé a mi gata para una cirugía y el equipo médico fue impecable. Las instalaciones están muy limpias, bien equipadas y el seguimiento postoperatorio fue constante. Valoro mucho la honestidad y la transparencia con la que manejan los presupuestos y diagnósticos. Sin duda, mi clínica de confianza a partir de ahora."
                         </p2>
                 </div>
-                        <p className="nomper2">Emilio Gonzales</p>
+                        
             </div>
 
         </div>
